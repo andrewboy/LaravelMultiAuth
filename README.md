@@ -42,14 +42,15 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
 
 1. First setup the [Kbwebs/MultiAuth](https://github.com/Kbwebs/MultiAuth) package
 2. In config/app.php set the provider:
-```
+    ```
     ...
     'providers' => [
         ...
         Andrewboy\LaravelMultiAuth\LaravelMultiAuthServiceProvider::class,
     ],
     ...
-```
+    ```
+
 3. Set the controllers
 
     **AuthController**
