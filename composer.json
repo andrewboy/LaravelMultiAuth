@@ -10,8 +10,12 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "illuminate/support": ">5.0",
     "kbwebs/multiauth": "~1.0"
+  },
+  "require-dev": {
+    "illuminate/support": "5.1.*",
+    "illuminate/mail": "5.1.*",
+    "illuminate/contracts": "5.1.*"
   },
   "autoload": {
     "psr-0": {
