@@ -1,13 +1,13 @@
 <?php namespace Andrewboy\LaravelMultiAuth\Traits;
 
-use Illuminate\Foundation\Auth\ResetsPasswords as DefaultResetPasswords;
+use Illuminate\Foundation\Auth\ResetsPasswords as DefaultResetsPasswords;
 use Illuminate\Http\Request;
 use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Password;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-trait ResetPasswords extends DefaultResetPasswords {
+trait ResetsPasswords extends DefaultResetsPasswords {
 
     /**
      * Send a reset link to the given user.
