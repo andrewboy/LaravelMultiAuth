@@ -19,7 +19,7 @@ trait ResetsPasswords {
     {
         $this->validate($request, ['email' => 'required|email']);
 
-        $response = call_user_func('Password::'.$this->entity)
+        $response = call_user_func('Password::'.$this->getEntity())
             ->sendResetLink($request->only('email'), function (Message $message) {
                 $message->subject($this->getEmailSubject());
             });
@@ -50,7 +50,7 @@ trait ResetsPasswords {
             'email', 'password', 'password_confirmation', 'token'
         );
 
-        $response = call_user_func('Password::'.$this->entity)->reset($credentials, function ($user, $password) {
+        $response = call_user_func('Password::'.$this->getEntity())->reset($credentials, function ($user, $password) {
             $this->resetPassword($user, $password);
         });
 
@@ -78,6 +78,11 @@ trait ResetsPasswords {
 
         $user->save();
 
-        call_user_func('Auth::'.$this->entity)->login($user);
+        call_user_func('Auth::'.$this->getEntity())->login($user);
+    }
+
+    protected function getEntity()
+    {
+        return property_exists($this, 'entity') ? $this->entity : array_keys(Config::get('auth.multi-auth'))[0];
     }
 }
