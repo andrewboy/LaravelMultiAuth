@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Password;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-trait ResetsPasswords extends DefaultResetsPasswords {
+trait ResetsPasswords {
+    use DefaultResetsPasswords;
 
     /**
      * Send a reset link to the given user.
@@ -19,9 +20,10 @@ trait ResetsPasswords extends DefaultResetsPasswords {
     {
         $this->validate($request, ['email' => 'required|email']);
 
-        $response = call_user_func('Password::'.$this->entity)->sendResetLink($request->only('email'), function (Message $message) {
-            $message->subject($this->getEmailSubject());
-        });
+        $response = call_user_func('Password::'.$this->entity)
+            ->sendResetLink($request->only('email'), function (Message $message) {
+                $message->subject($this->getEmailSubject());
+            });
 
         switch ($response) {
             case Password::RESET_LINK_SENT:
