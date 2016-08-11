@@ -3,10 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\AuthenticatesUsers as DefaultAuthenticatesUsers;
-use Illuminate\Foundation\Auth\RedirectsUsers;
 
 trait AuthenticatesUsers {
-    use DefaultAuthenticatesUsers, RedirectsUsers;
+    use DefaultAuthenticatesUsers;
 
     /**
      * Handle a login request to the application.
