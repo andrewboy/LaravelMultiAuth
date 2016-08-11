@@ -80,3 +80,5 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
         ...
     }
     ```
+    
+    Note: if you have only one entity, then you don't have to use the protected $entity property.
