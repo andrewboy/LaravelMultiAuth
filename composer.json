@@ -1,0 +1,22 @@
+{
+  "name": "andrewboy/laravel-multi-auth",
+  "description": "Laravel 5.1 package for laravel multi auth.",
+  "keywords": ["laravel", "multi", "auth"],
+  "authors": [
+    {
+      "name": "Beck András",
+      "email": "andras.jozsef.beck@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": ">5.0",
+    "kbwebs/multiauth": "~1.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Andrewboy\\LaravelMultiAuth": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
