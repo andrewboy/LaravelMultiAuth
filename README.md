@@ -50,7 +50,6 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
 ],
 ...
 ```
-
 3. Set the controllers
 
     **AuthController**
