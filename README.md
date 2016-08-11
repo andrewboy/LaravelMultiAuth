@@ -51,7 +51,6 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
 ...
 ```
 3. Set the controllers
-
     **AuthController**
 
     ```
@@ -65,7 +64,7 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
         ...
     }
     ```
-**PasswordController**
+    **PasswordController**
 
     ```
     use Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords;
