@@ -53,7 +53,7 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
 
 3. Set the controllers
 
-**AuthController**
+    **AuthController**
 
     ```
     use Andrewboy\LaravelMultiAuth\Traits\AuthenticatesAndRegistersUsers;
