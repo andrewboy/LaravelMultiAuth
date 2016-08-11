@@ -1,4 +1,4 @@
-# Laravel Multi Auth
+# Multi Auth for Laravel 5.1
 
 This package can be use with only 5.1 version of laravel. This package extends the **Kbwebs/MultiAuth** package by overriding the default single 
 laravel auth traits. With this package you can easily use the auth mechanism that laravel default offers.
