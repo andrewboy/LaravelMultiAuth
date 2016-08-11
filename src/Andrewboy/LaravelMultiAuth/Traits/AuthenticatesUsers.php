@@ -81,4 +81,14 @@ trait AuthenticatesUsers {
 
         return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');
     }
+
+    /**
+     * Get Entity
+     *
+     * @return string
+     */
+    protected function getEntity()
+    {
+        return property_exists($this, 'entity') ? $this->entity : array_keys(Config::get('auth.multi-auth'))[0];
+    }
 }
