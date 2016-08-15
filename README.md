@@ -5,7 +5,7 @@ laravel auth traits. With this package you can easily use the auth mechanism tha
 
 ## Overwritten traits
 
-```
+```PHP
 Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers
 
 to
@@ -13,7 +13,7 @@ to
 Andrewboy\LaravelMultiAuth\Traits\AuthenticatesAndRegistersUsers
 ```
 
-```
+```PHP
 Illuminate\Foundation\Auth\AuthenticatesUsers
 
 to
@@ -21,7 +21,7 @@ to
 Andrewboy\LaravelMultiAuth\Traits\AuthenticatesUsers
 ```
 
-```
+```PHP
 Illuminate\Foundation\Auth\RegistersUsers
 
 to
@@ -29,7 +29,7 @@ to
 Andrewboy\LaravelMultiAuth\Traits\RegistersUsers
 ```
 
-```
+```PHP
 Illuminate\Foundation\Auth\ResetsPasswords
 
 to
@@ -42,7 +42,7 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
 
 1. First setup the [Kbwebs/MultiAuth](https://github.com/Kbwebs/MultiAuth) package
 2. In config/app.php set the provider:
-    ```
+    ```PHP
     ...
     'providers' => [
         ...
@@ -55,7 +55,7 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
 
     **AuthController**
 
-    ```
+    ```PHP
     use Andrewboy\LaravelMultiAuth\Traits\AuthenticatesAndRegistersUsers;
     
     class AuthController extends Controller
@@ -68,7 +68,7 @@ Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
     ```
     **PasswordController**
 
-    ```
+    ```PHP
     use Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords;
     
     class PasswordController extends Controller
