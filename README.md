@@ -5,37 +5,40 @@ laravel auth traits. With this package you can easily use the auth mechanism tha
 
 ## Overwritten traits
 
-```PHP
-Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers
++ AuthenticatesAndRegistersUsers
 
-to
+    ```PHP
+    Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers
+    ```
+    to
+    ```PHP
+    Andrewboy\LaravelMultiAuth\Traits\AuthenticatesAndRegistersUsers
+    ```
++ AuthenticatesUsers
 
-Andrewboy\LaravelMultiAuth\Traits\AuthenticatesAndRegistersUsers
-```
-
-```PHP
-Illuminate\Foundation\Auth\AuthenticatesUsers
-
-to
-
-Andrewboy\LaravelMultiAuth\Traits\AuthenticatesUsers
-```
-
-```PHP
-Illuminate\Foundation\Auth\RegistersUsers
-
-to
-
-Andrewboy\LaravelMultiAuth\Traits\RegistersUsers
-```
-
-```PHP
-Illuminate\Foundation\Auth\ResetsPasswords
-
-to
-
-Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
-```
+    ```PHP
+    Illuminate\Foundation\Auth\AuthenticatesUsers
+    ```
+    to
+    ```PHP
+    Andrewboy\LaravelMultiAuth\Traits\AuthenticatesUsers
+    ```
++ RegistersUsers
+    ```PHP
+    Illuminate\Foundation\Auth\RegistersUsers
+    ```
+    to
+    ```PHP
+    Andrewboy\LaravelMultiAuth\Traits\RegistersUsers
+    ```
++ ResetsPasswords
+    ```PHP
+    Illuminate\Foundation\Auth\ResetsPasswords
+    ```
+    to
+    ```PHP
+    Andrewboy\LaravelMultiAuth\Traits\ResetsPasswords
+    ```
 
 
 ## Installation steps
