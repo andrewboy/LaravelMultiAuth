@@ -24,6 +24,7 @@ laravel auth traits. With this package you can easily use the auth mechanism tha
     Andrewboy\LaravelMultiAuth\Traits\AuthenticatesUsers
     ```
 + RegistersUsers
+
     ```PHP
     Illuminate\Foundation\Auth\RegistersUsers
     ```
@@ -32,6 +33,7 @@ laravel auth traits. With this package you can easily use the auth mechanism tha
     Andrewboy\LaravelMultiAuth\Traits\RegistersUsers
     ```
 + ResetsPasswords
+
     ```PHP
     Illuminate\Foundation\Auth\ResetsPasswords
     ```
